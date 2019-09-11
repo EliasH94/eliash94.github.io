@@ -10,14 +10,14 @@ body {
 .container {
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
-    grid-template-rows: 100px auto 55px;
+    grid-template-rows: 48px auto 55px;
     min-height: 100vh;
 }
 
 .header {
     grid-area: header;
-    padding: 10px;
-    background-color: #FF8C00;
+    padding: 0;
+    background-color: #333;
     color: white;
 }
 
@@ -81,12 +81,13 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    height: 48px;
 }
 
 /* Add an active class to highlight the current page */
 
 .active {
-    background-color: #4CAF50;
+    background-color: #FF8C00;
     color: white;
 }
 
