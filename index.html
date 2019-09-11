@@ -5,46 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Html5 vs Html4</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="header">
-            <h1>Website</h1>
-        </div>
-        <div class="content">
-
-            <div class="articleOne">
-                <h3>HTML 5</h3>
-                <ul class="infoList">
-                    <li>HTML5: Senaste HTML versionen med nya tags samt med möjligheter till bättre utseende.</li>
-                    <br>
-                    <li>
-                        HTML5: Allt kod i HTML blev simplifierad för användaren, då man behöver inte skriva lika mycket
-                        kod.
-                        (ex&lt;!DOCTYPE&gt; html Här räcker det med att skriva denna paragraf).
-                    </li>
-                </ul>
-            </div>
-
-            <div class="articleTwo">
-                <h3>HTML 4</h3>
-                <ul class="infoList">
-                    <li>
-                        HTML4: 4:e HTML versionen som funkar i de flesta ´browsers´, den är dock mer komplex och ser
-                        inte
-                        lika bra ut.
-                    </li>
-                </ul>
+    <div class="topNav" id="myTopNav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <button onClick="myFunction()" class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
             </div>
         </div>
-        <div class="footer">
-            <p>&copy; 2019 / Elias & Sayin</p>
-        </div>
-
+        <a href="#about">About</a>
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        <script src="script.js"></script>
     </div>
 </body>
 
