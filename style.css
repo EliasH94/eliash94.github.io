@@ -23,9 +23,12 @@ body {
     grid-area: main;
     display: grid;
     grid-template-areas: "articleOne articleTwo";
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
+    ;
     column-gap: 5px;
     padding: 5px 0;
+    background-color: yellow;
+    width:
 }
 
 .articleOne, .articleTwo {
