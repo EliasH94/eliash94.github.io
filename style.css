@@ -17,6 +17,7 @@ body {
 .header {
     grid-area: header;
     padding: 0;
+    /*font-family: 'Catamaran', sans-serif;*/
 }
 
 .content {
@@ -28,16 +29,23 @@ body {
     padding: 10px;
 }
 
+.grid-header {
+    text-align: center;
+}
+
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
+    padding-top: 5px;
     font-size: 10px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .footer {
     grid-area: footer;
     background-color: #333;
+    /*font-family: 'Catamaran', sans-serif;*/
     color: white;
     text-align: center;
 }
