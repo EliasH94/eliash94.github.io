@@ -78,6 +78,10 @@ body {
     height: auto;
 }
 
+.videoEx {
+    width: 150px;
+}
+
 /*Nav background*/
 
 .topNav {
