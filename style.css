@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #888;
+    background-image: radial-gradient(circle, #888, #777777, #666);
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 .header {
     grid-area: header;
     padding: 0;
-    /*font-family: 'Catamaran', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
 }
 
 .content {
@@ -25,29 +25,57 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    background-color: #2196F3;
+    margin: 10px;
     padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.content-nogrid {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-area: main;
+    padding: 10px 0;
 }
 
 .grid-header {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding-top: 5px;
-    font-size: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 1rem;
     text-align: center;
-    border-radius: 5px;
+}
+
+.grid-item:nth-last-child(-n+2) {
+    border: none;
+}
+
+.info {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
 }
 
 .footer {
     grid-area: footer;
     background-color: #333;
-    /*font-family: 'Catamaran', sans-serif;*/
+    font-family: sans-serif;
     color: white;
     text-align: center;
+}
+
+.infoVideo {
+    width: auto;
+    height: auto;
 }
 
 /*Nav background*/
@@ -71,14 +99,14 @@ body {
     height: 48px;
 }
 
-/* Add an active class to highlight the current page */
+/* Active class to highlights the current page */
 
 .active {
     background-color: #FF8C00;
     color: white;
 }
 
-/*Hide link that should open and close the topnav on small screens*/
+/*Hide link that should open and close the topNav on small screens*/
 
 .topNav .icon {
     display: none;
@@ -125,6 +153,10 @@ body {
     .container {
         grid-template-areas: 'header header  header' '.      main    .' 'footer footer  footer';
         grid-template-columns: auto 500px auto;
+    }
+    .infoVideo {
+        width: 560px;
+        height: 315px;
     }
 }
 
