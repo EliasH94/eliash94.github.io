@@ -168,12 +168,15 @@ body {
         height: 315px;
     }
     .audioEx {
-        width: auto;
+        width: 200px;
     }
 }
 
 @media (min-width: 1024px) {
     .container {
         grid-template-columns: auto 760px auto;
+    }
+    .audioEx {
+        width: 270px;
     }
 }

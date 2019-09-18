@@ -9,4 +9,11 @@ function myFunction() {
     }
 }
 
-
+function myImage() {
+    var img = document.createElement("IMG");
+    img.setAttribute("src", "dance.gif")
+    img.setAttribute("width", "304");
+    img.setAttribute("height", "228");
+    img.setAttribute("alt", "html4");
+    document.body.appendChild(img);
+}
